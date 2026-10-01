@@ -1555,7 +1555,6 @@ static int doLoad(char** argv, char * const envp[]) {
             ALOGW("[Arm KernelUpRev] 32-bit userspace unsupported on 6.2+ kernels.");
         } else if (isArm()) {
             ALOGE("[Arm] 64-bit userspace required on 6.2+ kernels (%d).", first_api_level);
-            return 1;
         } else { // x86 since RiscV cannot be 32-bit
             ALOGE("[x86] 64-bit userspace required on 6.2+ kernels.");
             return 1;
